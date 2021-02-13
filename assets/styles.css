@@ -4,7 +4,9 @@
     border: 0;
     list-style: none;
     font-family: 'Libre Franklin', sans-serif;
-    flex-flow: row wrap;
+}
+* p {
+    display: flex;
 }
 
 a {
@@ -19,7 +21,7 @@ header {
     background-image: url("images/MirrorPattern.png");
     background-color: grey;
     background-size: cover;
-    border-bottom: 5px solid;
+    border-bottom: 3px solid;
     border-color: burlywood;
     min-height: 100px;
     width: 100%;
@@ -40,29 +42,28 @@ header nav {
     flex: 30%;
     text-align: right;
 }
+ 
+main {
+
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
 
 section {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-flow: row wrap;
 }
 
-section p {
-    display: flex;
-}
-
-.biography {
-    float: right;
-}
-
-.biography p {
+div {
+    padding: 5px;
+    width: 50%;
     float: right;
 }
 
 .otherfunstuff {
-    min-height: 300px;
-    margin: 3px;
-    border: 5px solid;
+    padding: 5px;
+    min-height: 25px;
+    border: 3px solid;
     border-color: burlywood;
 }
 
@@ -72,17 +73,53 @@ section p {
 }
 
 .otherfunstuff p {
-    font-size: 25px;
+    font-size: 5vmin;
     color: white;
     background-color: darkgoldenrod;
     position: absolute;
     padding: 5px;
 }
 
-.funstuff p {
-    font-size: 50px;
+.morefunstuff {
+    min-height: 25px;
+    width: 50%;
+    display: flex;
+    border: 3px solid;
+    border-color: burlywood;
+}
+
+.morefunstuff img {
+    width: 100%;
+    height: 100%;
+}
+
+.morefunstuff p {
+    font-size: 5vmin;
     color: white;
     background-color: darkgoldenrod;
+    position: absolute;
+    padding: 5px;
+}
+.funstuff {
+    padding: 5px;
+    flex: auto;
+    width: 100%;
+    min-height: 25px;
+    border: 3px solid;
+    border-color: burlywood;
+}
+
+.funstuff img {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.funstuff p {
+    font-size: 5vmin;
+    color: white;
+    background-color: darkgoldenrod;
+    position: absolute;
+    padding: 5px;   
 }
 
 h2 {
@@ -92,20 +129,6 @@ h2 {
     font-style: italic;
 }
 
-.funstuff {
-    margin: 5px;
-    flex: auto;
-    width: 100%;
-    min-height: 100%;
-    border: 5px solid;
-    border-color: burlywood;
-}
-
-.funstuff img {
-    min-height: 100%;
-    min-width: 100%;
-}
-
 footer {
     display: flex;
     flex-flow: row nowrap;
@@ -113,7 +136,7 @@ footer {
     background-image: url("images/MirrorPattern.png");
     background-color: grey;
     background-size: cover;
-    border-top: solid 5px;
+    border-top: solid 3px;
     border-color: burlywood;
     min-height: 50px;
     width: 100%;

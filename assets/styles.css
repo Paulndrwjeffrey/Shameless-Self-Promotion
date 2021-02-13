@@ -3,6 +3,7 @@
     padding: 0;
     border: 0;
     list-style: none;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 a {
@@ -17,25 +18,88 @@ header {
     background-image: url("images/MirrorPattern.png");
     background-color: grey;
     background-size: cover;
-    height: 110px;
+    border-bottom: 5px solid;
+    border-color: burlywood;
+    min-height: 100px;
     width: 100%;
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
-h1 {
-    font-size: 75px;
-    font-family: 'Libre Franklin', sans-serif;
+header h1 {
+    padding: 25px 10px 20px 10px;
     font-style: italic;
-    margin: 10px;
-    display: flex;
+    flex: 70%;
 }
 
-nav {
-    display: flex;
+header nav {
+    padding: 15px 10px 10px 10px;
+    float: right;
+    flex: 30%;
     text-align: right;
 }
 
-nav ul {
-   margin: 25px 25px 25px 25px; 
+content {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+}
 
+content section {
+    flex: 50%;
+    float: right;
+}
+
+content section h2 {
+    font-size: 30px;
+    font-style: italic;
+    flex: auto;
+}
+
+#portrait {
+    padding: 10px;
+    flex: 50%;
+    min-height: 200px;
+}
+
+.funstuff {
+    display: flex;
+    flex: auto;
+    min-height: 400px;
+
+}
+
+.otherfunstuff {
+    display: flex;
+    flex: auto;
+    min-height: 400px;
+}
+
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-image: url("images/MirrorPattern.png");
+    background-color: grey;
+    background-size: cover;
+    border-top: solid 5px;
+    border-color: burlywood;
+    min-height: 50px;
+    width: 100%;
+}
+
+footer h3 {
+    padding: 7px 15px 15px 15px;
+    text-align: left;
+    font-size: 25px;
+    font-style: italic;
+    flex: 50%;
+}
+
+footer ul {
+    padding-right: 400px;
+    text-align: left;
+    float: right;
+    flex: 50%;
 }
